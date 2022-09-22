@@ -1,0 +1,37 @@
+<div id="<%= dom_id signup %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Performer:</strong>
+    <%= signup.performer_id %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Perform date:</strong>
+    <%= signup.perform_date %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Round:</strong>
+    <%= signup.round %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Wechat:</strong>
+    <%= signup.wechat_id %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Email:</strong>
+    <%= signup.email %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">First time:</strong>
+    <%= signup.first_time %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this signup", signup, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this signup', edit_signup_path(signup), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>

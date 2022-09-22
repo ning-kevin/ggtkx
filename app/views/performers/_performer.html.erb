@@ -1,0 +1,32 @@
+<div id="<%= dom_id performer %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Name:</strong>
+    <%= performer.name %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Wechat:</strong>
+    <%= performer.wechat_id %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Email:</strong>
+    <%= performer.email %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">P times:</strong>
+    <%= performer.p_times %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Description:</strong>
+    <%= performer.description %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this performer", performer, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this performer', edit_performer_path(performer), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>

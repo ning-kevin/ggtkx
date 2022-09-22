@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  performer: one
+  perform_date: 2022-09-15
+  round: 1
+  wechat_id: MyString
+  email: MyString
+  first_time: false
+
+two:
+  performer: two
+  perform_date: 2022-09-15
+  round: 1
+  wechat_id: MyString
+  email: MyString
+  first_time: false
